@@ -1,33 +1,75 @@
-div.top_block{
+nav.top_block{
 
     position: absolute;
 
-    background-color: lightblue;
+    background-color: #408E8E;
 
     width: 100%;
 
-    height: 250px;
+    height: 300px;
 
     z-index: 30;
 
 }
 
+h1.site_title{
+
+    font-family: 'Oswald', sans-serif;
+
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 2px;
+
+    font-size: 40px;
+
+    color: whitesmoke;
+
+}
+
+div.align{
+
+    text-align: center;
+
+}
+
+a.top_navigation{
+
+    font-family: 'Oswald', sans-serif;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    color: whitesmoke;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
 
 
-div.mid_block{
 
-    margin-top: 150px;
+article.mid_block{
+
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 220px;
 
 
     position: absolute;
 
     z-index: 40;
 
-    background-color: rgba(255, 250, 240, 1);
+    background-color: ghostwhite;
 
     width: 700px;
 
     height: 900px;
+
+    border-radius: 5px;
 
 
 
@@ -38,7 +80,7 @@ div.mid_block{
 body{
 
 
-    background-image: url("http://i.imgur.com/Ngdj3YA.jpg");
+    /*background-image: url("http://i.imgur.com/Ngdj3YA.jpg");*/
     background-size: 100%;
     background-repeat: no-repeat;
 
