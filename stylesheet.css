@@ -1,22 +1,6 @@
-article.innehold{
+div.top_block{
 
-    z-index: 10;
-
-    background-color: green;
-
-    width: 700px;
-
-    height: 800px;
-
-    margin: 0 auto;
-
-    position: relative;
-
-}
-
-nav.meny{
-
-    z-index: 9;
+    position: absolute;
 
     background-color: lightblue;
 
@@ -24,7 +8,39 @@ nav.meny{
 
     height: 250px;
 
+}
+
+
+
+div.mid_block{
+
+
     position: relative;
+
+    z-index: 20;
+
+    background-color: rgba(255, 250, 240, 1);
+
+    width: 700px;
+
+    height: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+
+}
+
+
+body{
+
+
+    background-image: url("http://i.imgur.com/Ngdj3YA.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 }
 
 html, body {
