@@ -34,6 +34,12 @@ div.align{
 
 }
 
+a:hover{
+
+    background-image: url("images/bokehtest_v2_1_nonoise.png");
+
+}
+
 a.top_navigation{
 
     font-family: 'Oswald', sans-serif;
