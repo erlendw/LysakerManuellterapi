@@ -1,4 +1,25 @@
+#innehold{
+
+    z-index: 10;
+
+    background-color: green;
+
+    width: 700px;
+
+    height: 800px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+
+
+
+}
+
 #meny{
+
+    z-index: 9;
 
     background-color: lightblue;
 
@@ -6,8 +27,7 @@
 
     height: 250px;
 
-
-
+    position: relative;
 }
 
 html, body {
