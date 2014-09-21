@@ -63,13 +63,18 @@ article.mid_block{
 
     z-index: 40;
 
-    background-color: ghostwhite;
+    background-color: whitesmoke;
 
-    width: 700px;
+    width: 70%;
 
     height: 900px;
 
     border-radius: 5px;
+
+    -webkit-box-shadow: 0px 6px 11px 0px #C2C2C2;
+    -moz-box-shadow: 0px 6px 11px 0px #C2C2C2;
+    box-shadow: 0px 6px 11px 0px #C2C2C2;
+
 
 
 
