@@ -8,25 +8,26 @@ div.top_block{
 
     height: 250px;
 
+    z-index: 30;
+
 }
 
 
 
 div.mid_block{
 
+    margin-top: 150px;
 
-    position: relative;
 
-    z-index: 20;
+    position: absolute;
+
+    z-index: 40;
 
     background-color: rgba(255, 250, 240, 1);
 
     width: 700px;
 
     height: 900px;
-
-    margin-left: auto;
-    margin-right: auto;
 
 
 
