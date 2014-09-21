@@ -4,8 +4,6 @@ nav.top_block{
 
     background-color: #408E8E;
 
-    background-image: url("images/bokehtest_v2_1.png");
-
     width: 100%;
 
     height: 300px;
@@ -40,7 +38,7 @@ a.top_navigation{
 
     text-align: left;
 
-    font-size: 17px;
+    font-size: 15px;
 
     color: whitesmoke;
 
@@ -49,16 +47,9 @@ a.top_navigation{
 
 }
 
-a:hover{/*Når musepekeren er over*/
-
-    color: #31C1FD;/*Bør vel endres på*/
-    text-shadow: 0px 0px 8px rgba(150, 150, 150, 1);
-
-}
 
 
-
-/*article.mid_block{
+article.mid_block{
 
     left: 0;
     right: 0;
@@ -76,7 +67,7 @@ a:hover{/*Når musepekeren er over*/
 
     width: 70%;
 
-    height: 100%;
+    height: 900px;
 
     border-radius: 5px;
 
@@ -87,17 +78,6 @@ a:hover{/*Når musepekeren er over*/
 
 
 
-
-}*/
-
-footer.botom_block{
-
-
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:100px;   /* Height of the footer */
-    background:#408E8E;
 
 }
 
