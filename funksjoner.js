@@ -1,15 +1,31 @@
 
 
 
-function endreInnhold(){
+function endreInnhold(a){
 
-    c= 'hello'
-    console.log(c)
 
-    document.getElementById('test').style.color = 'blue';
 
-    i
 
+
+
+
+}
+
+
+
+function onScroll(){
+
+    var lengdefratopp = document.body.scrollTop
+
+    if(lengdefratopp>150){
+
+        endreInnhold(0)
+
+    }
+
+    else{
+        endreInnhold(1)
+    }
 
 
 }
