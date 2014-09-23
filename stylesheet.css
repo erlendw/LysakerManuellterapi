@@ -22,16 +22,17 @@ body {
 
     position: relative;
 
-    width: 70%;
+    width: 60%;
     height: 900px;/*Skal være auto*/
     background-color: whitesmoke;
 
-    margin-top: -50px;
+    margin-top: -70px;
 
     margin-right: auto;
     margin-left: auto;
 
     padding-bottom: 60px;/*Må være lik height av bottom block*/
+    padding-top: 60px;
 
     border-radius: 5px;
 
@@ -82,7 +83,7 @@ a:hover{
 
 }
 
-a.top_navigation,p{
+a.top_navigation{
 
     font-family: 'Oswald', sans-serif;
 
@@ -96,5 +97,23 @@ a.top_navigation,p{
     padding-right: 5px;
 
     text-align: center;
+
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+
+    color: black;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80%;
+
+}
+
+button{
+
+    color: white;
 
 }
