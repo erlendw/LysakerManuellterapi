@@ -32,13 +32,11 @@ body {
     margin-left: auto;
 
     padding-bottom: 60px;/*Må være lik height av bottom block*/
-    padding-top: 60px;
+    padding-top: 1px;
 
     border-radius: 5px;
 
-    -webkit-box-shadow: 0px 6px 11px 0px #C2C2C2;
-    -moz-box-shadow: 0px 6px 11px 0px #C2C2C2;
-    box-shadow: 0px 6px 11px 0px #C2C2C2;
+    border: 1px solid black;
 
 
 }
@@ -110,11 +108,9 @@ p{
 
     width: 80%;
 
-}
+    padding: 10px;
 
-button{
-
-    color: white;
+    margin-top: 0;
 
 }
 
@@ -131,5 +127,25 @@ button{
     position: fixed;
 
 
+
+}
+
+.content_block{
+
+    width: 99%;
+    height: auto;
+
+    margin-top: 5px;
+
+    margin-bottom: 0;
+
+
+    /*background-color: rgba(103, 152, 167, 0.1);*/
+
+    border-radius: 5px;
+
+
+    margin-right: auto;
+    margin-left: auto;
 
 }
