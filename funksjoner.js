@@ -31,37 +31,26 @@ function onScroll(){
 
     var forsvinn = (100-lengdefratopp)/100;
 
-    var dukkopp = 1-(100-lengdefratopp)/100;
+    var dukkopp = (lengdefratopp/33)/10;
+
+    document.getElementById('menu_element').style.opacity = dukkopp;
 
     if(forsvinn>0){
 
     document.getElementById('overskrift').style.opacity = forsvinn;
-    document.getElementById('endres').style.opacity = forsvinn;
+    //document.getElementById('endres').style.opacity = forsvinn;
 
 
     }
 
     else{
 
+
         document.getElementById('overskrift').style.opacity = 0;
 
     }
 
-    if(lengdefratopp>300){
-
-        //document.getElementById('endres').style.opacity = 0;
-        document.getElementById('menu_element').style.opacity = 1;
-    }
-
-    else {
-
-        //document.getElementById('endres').style.opacity = 1;
-        document.getElementById('menu_element').style.opacity = 0;
-
-
-    }
-
-    console.log(dukkopp)
+    console.log((lengdefratopp/33)/10)
 
 
    /* if(lengdefratopp>150){
