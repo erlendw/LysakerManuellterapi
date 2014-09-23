@@ -31,9 +31,21 @@ function onScroll(){
 
     var forsvinn = (100-lengdefratopp)/100;
 
+    var dukkopp = 1-(100-lengdefratopp)/100;
+
+    if(forsvinn>0){
+
     document.getElementById('overskrift').style.opacity = forsvinn;
 
-    console.log((100-lengdefratopp)/100)
+    }
+
+    else{
+
+        document.getElementById('overskrift').style.opacity = 0;
+
+    }
+
+    console.log(dukkopp)
 
    /* if(lengdefratopp>150){
 
