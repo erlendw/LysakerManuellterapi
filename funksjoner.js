@@ -36,6 +36,8 @@ function onScroll(){
     if(forsvinn>0){
 
     document.getElementById('overskrift').style.opacity = forsvinn;
+    document.getElementById('endres').style.opacity = forsvinn;
+
 
     }
 
@@ -45,7 +47,22 @@ function onScroll(){
 
     }
 
+    if(lengdefratopp>300){
+
+        //document.getElementById('endres').style.opacity = 0;
+        document.getElementById('menu_element').style.opacity = 1;
+    }
+
+    else {
+
+        //document.getElementById('endres').style.opacity = 1;
+        document.getElementById('menu_element').style.opacity = 0;
+
+
+    }
+
     console.log(dukkopp)
+
 
    /* if(lengdefratopp>150){
 
