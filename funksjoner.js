@@ -29,7 +29,13 @@ function onScroll(){
 
     var lengdefratopp = document.body.scrollTop;
 
-    if(lengdefratopp>150){
+    var forsvinn = (100-lengdefratopp)/100;
+
+    document.getElementById('overskrift').style.opacity = forsvinn;
+
+    console.log((100-lengdefratopp)/100)
+
+   /* if(lengdefratopp>150){
 
         endreInnhold(0)
 
@@ -37,7 +43,7 @@ function onScroll(){
 
     else{
         endreInnhold(1)
-    }
+    }*/
 
 
 }
