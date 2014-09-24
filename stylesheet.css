@@ -157,6 +157,8 @@ p{
 
     letter-spacing: 1px;
 
+    color: #565D63;
+
 }
 
 .footer_text{
@@ -170,4 +172,23 @@ p{
     line-height: 3;
 
 
+}
+
+iframe{
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.center_gmap{
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    width:600px;
+    display:block;
+    margin:0 auto;
 }
