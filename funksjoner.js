@@ -4,23 +4,23 @@ function onScroll(){
 
     var forsvinn = (100-lengdefratopp)/100;
 
-    var dukkopp = ((lengdefratopp/33)/10)-0.3;
+    var dukkopp = (((lengdefratopp/333))-0.3)*2;
 
-    document.getElementById('endres').style.opacity = (1-dukkopp);
+    document.getElementById('top_block_animation').style.opacity = (forsvinn+0.35);
 
     if(lengdefratopp>100){
 
-    document.getElementById('menu_element').style.opacity = dukkopp;
+    document.getElementById('menu_block_animation').style.opacity = dukkopp;
 
 
     }
 
-    else document.getElementById('menu_element').style.opacity = 0;
+    else document.getElementById('menu_block_animation').style.opacity = 0;
 
 
     if(forsvinn>0){
 
-    document.getElementById('overskrift').style.opacity = forsvinn;
+    document.getElementById('sit_title_animation').style.opacity = forsvinn;
 
 
 
@@ -29,11 +29,11 @@ function onScroll(){
     else{
 
 
-        document.getElementById('overskrift').style.opacity = 0;
+        document.getElementById('sit_title_animation').style.opacity = 0;
 
     }
 
-    console.log(1-dukkopp)
+    console.log(forsvinn+0.4)
 }
 
 
