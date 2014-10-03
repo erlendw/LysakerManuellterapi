@@ -10,7 +10,7 @@ function onScroll(){
 
     if(lengdefratopp>100){
 
-    document.getElementById('menu_block_animation').style.opacity = dukkopp;
+        document.getElementById('menu_block_animation').style.opacity = dukkopp;
 
 
     }
@@ -20,7 +20,7 @@ function onScroll(){
 
     if(forsvinn>0){
 
-    document.getElementById('sit_title_animation').style.opacity = forsvinn;
+        document.getElementById('sit_title_animation').style.opacity = forsvinn;
 
 
 
@@ -35,5 +35,4 @@ function onScroll(){
 
     console.log(forsvinn+0.4)
 }
-
 

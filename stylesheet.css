@@ -115,6 +115,7 @@ a:hover{
     color: whitesmoke;
     padding-left: 5px;
     padding-right: 5px;
+    text-decoration: none;
 
 }
 
@@ -140,13 +141,16 @@ a:hover{
 
     font-size: 20px;
 
+    color: #565D63;
+
+
+
 
 }
 
 p{
 
     font-family: 'Roboto Condensed', sans-serif;
-    color: black;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
