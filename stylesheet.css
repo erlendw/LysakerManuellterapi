@@ -13,7 +13,10 @@ html, body {
 }
 .top_block {
 
-    background-image: url("images/bokehtest_v2_1_nonoise.png");
+    background-image: url("images/bokeh.png");
+
+    background-color: #6798A7;
+
     width: 100%;
     height: 400px;
     opacity: 1;
@@ -22,7 +25,7 @@ html, body {
 .mid_block {
 
     position: relative;
-    width: 60%;
+    width: 750px;
     height: auto;/*Skal være auto*/
     background-color: whitesmoke;
     margin-top: -100px;
@@ -48,12 +51,12 @@ h1.site_title{
 
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    line-height: 5;
+    line-height: 2;
     letter-spacing: 2px;
     font-size: 50px;
-    color: whitesmoke;
+    color: black;
     margin: 0;
-    opacity: 1;
+    opacity: 0.7;
 
 }
 
@@ -79,14 +82,14 @@ a:hover{
 
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
-    color: whitesmoke;
+    color: black;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 .content_block{
 
-    width: 99%;
+    width: 750px;
     height: 900px;
     margin-top: 5px;
     margin-bottom: 0;
@@ -112,7 +115,7 @@ a:hover{
 
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
-    color: whitesmoke;
+    color: black;
     padding-left: 5px;
     padding-right: 5px;
     text-decoration: none;
@@ -157,7 +160,7 @@ p{
     padding: 10px;
     margin-top: 0;
 
-    font-size: 17px;
+    font-size: 20px;
 
     letter-spacing: 1px;
 
@@ -195,6 +198,21 @@ img{
     width:600px;
     display:block;
     margin:0 auto;
+}
+
+.logo{
+
+    padding-top: 100px;
+
+    padding-bottom: 30px;
+    height: 50px;
+    width: auto;
+
+    margin-left:47.5%;
+
+
+
+    opacity: 0.7;
 }
 
 /**/
