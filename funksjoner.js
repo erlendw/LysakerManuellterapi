@@ -1,38 +1,45 @@
 function onScroll(){
 
-    var lengdefratopp = document.body.scrollTop;
+    var offset = window.pageYOffset;
 
-    var forsvinn = (100-lengdefratopp)/100;
+    console.log(offset);
 
-    var dukkopp = (((lengdefratopp/333))-0.3)*2;
 
-    document.getElementById('top_block_animation').style.opacity = (forsvinn+0.35);
+    if(offset>250){
 
-    if(lengdefratopp>100){
-
-        document.getElementById('menu_block_animation').style.opacity = dukkopp;
-
+        callFadein()
 
     }
 
-    else document.getElementById('menu_block_animation').style.opacity = 0;
 
 
-    if(forsvinn>0){
 
-        document.getElementById('sit_title_animation').style.opacity = forsvinn;
+}
+var opacity = 0;
+var opacityfull = 1;
+var inkrement = 1/100;
+var teller = 0;
 
+var looptimer
+function fade(){
+
+    opacity+=inkrement;
+    opacityfull-=inkrement;
+
+    document.getElementById('menu_block_animation').style.opacity = opacity;
+    document.getElementById('top_block_animation').style.opacity = opacityfull;
+
+    teller++;
+
+    if(teller==100){
+
+        clearInterval(looptimer);
 
 
     }
+}
 
-    else{
-
-
-        document.getElementById('sit_title_animation').style.opacity = 0;
-
-    }
-
-    console.log(forsvinn+0.4)
+function callFadein(){
+    looptimer = setInterval(function(){fade()}, 15);
 }
 
