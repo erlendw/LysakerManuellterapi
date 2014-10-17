@@ -8,13 +8,13 @@
 
     background-color: black;
 
-    opacity: 1;
-
     position: fixed;
 
     z-index: 999;
 
     top:0;
+
+    opacity: 0;
 }
 
 .mid_block_js{
@@ -25,7 +25,7 @@
 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;/*må være headers høyde*/
+    margin-top: 200px;/*må være headers høyde*/
 
 
     background-color: whitesmoke;

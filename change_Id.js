@@ -8,4 +8,20 @@
  */
 
 
+function endreID(el){
 
+    if(el > 140){
+
+        document.getElementById('js_top_block').className = 'top_block_js';
+        document.getElementById('js_mid_block').className = 'mid_block_js';
+
+    }
+
+    else if(el<140){
+
+        document.getElementById('js_top_block').className = 'top_block';
+        document.getElementById('js_mid_block').className = 'mid_block';
+
+    }
+
+}
