@@ -12,6 +12,8 @@ function sjekkOffset(){
 
     scrolloffset = window.pageYOffset;
 
+    console.log(scrolloffset);
+
     endreID(scrolloffset);
 
 }

@@ -7,6 +7,8 @@
  *
  */
 
+/* Alt som trengs for å scrolle til et element er scrolltop */
+
 
 function autoScrollTo(el){
 
@@ -14,9 +16,8 @@ function autoScrollTo(el){
 
     var lengde = element.scrollTop;
 
-    console.log(lengde);
 
-    smooth_scroll_to(document.body, 600, 2000);
+    smooth_scroll_to(document.body, 1200, 1000);/*Midlertidig speed og avstand må sette oss inn i smoothscrollfilen*/
 
 
 
