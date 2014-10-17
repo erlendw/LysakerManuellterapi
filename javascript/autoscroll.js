@@ -4,33 +4,6 @@
  * Målet med denne filen er å bygge en autoscroller som navigerer til toppen av et element
  *
  */
-
-
-
-function scroll_down() {
-    var el = document.querySelector('.container');
-    smooth_scroll_to(el, el.scrollTop + 400, 600);
-}
-
-function scroll_up() {
-    var el = document.querySelector('.container');
-    smooth_scroll_to(el, el.scrollTop - 500, 600);
-}
-
-function sequence() {
-    var el = document.querySelector('.container');
-    smooth_scroll_to(el, el.scrollTop + 500, 800).then(function() {
-        return smooth_scroll_to(el, el.scrollTop - 200, 500);
-    }).then(function() {
-        return smooth_scroll_to(el, el.scrollTop + 900, 400);
-    }).catch(function(error) {
-        setTimeout(function() {
-            alert("Sequence cancelled: " + error);
-        }, 500);
-    });
-}
-
-
 /**
  Smoothly scroll element to the given target (element.scrollTop)
  for the given duration
