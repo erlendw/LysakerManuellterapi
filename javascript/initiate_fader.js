@@ -33,7 +33,7 @@ function fadein(string){
 
     }
 
-    var loopTimer = setTimeout('fadein(\''+string+'\')',50);
+    var loopTimer = setTimeout('fadein(\''+string+'\')',20);
 
 
 
