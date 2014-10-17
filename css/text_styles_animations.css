@@ -1,0 +1,15 @@
+.top_block_text_js{
+
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: -40px;
+
+}
+
+.site_title_js{
+
+    visibility: hidden;
+
+}

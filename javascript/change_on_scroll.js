@@ -17,8 +17,11 @@ function endreID(el){
 
         document.getElementById('js_top_block').className = 'top_block_js';
         document.getElementById('js_mid_block').className = 'mid_block_js';
+        document.getElementById('js_top_block_text').className = 'top_block_text_js';
+        document.getElementById('js_site_title').className = 'site_title_js';
 
-        fadein('js_top_block')
+
+        fadein('js_top_block');
 
         sjekk = 1;
 
@@ -28,6 +31,8 @@ function endreID(el){
 
         document.getElementById('js_top_block').className = 'top_block';
         document.getElementById('js_mid_block').className = 'mid_block';
+        document.getElementById('js_top_block_text').className = 'top_block_text';
+        document.getElementById('js_site_title').className = 'site_title';
 
         sjekk = 0;
     }
