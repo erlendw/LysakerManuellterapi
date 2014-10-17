@@ -1,110 +1,62 @@
+<!--
+
+Alle js funksjoner skal ha sitt eget dokument med beskrivende navn.
+^dette er for at det skal være lett å jobbe med en funksjon uten å lage problemer i en annen
+
+Alle HTML elementer skal være navngitt med class for html og id for javascript
+
+Skal du bruke div? finn ut om det finnes et bedre alternativ
+
+class navn er feks top_block koresponderende id er da js_top_block
+
+Copyright Mercor AS
+
+-->
+
+
 <!DOCTYPE html>
 <html>
+
+
 <head lang="en">
 
-    <link  rel='stylesheet'	type='text/css'	href='stylesheet.css'/>
+    <title></title>
+    <meta charset="UTF-8">
+    <!-- *Stylesheets* -->
+    <link  rel='stylesheet'	type='text/css'	href='block_styles.css'/>
+    <!-- *End of Stylesheets* -->
+
+
+    <!-- *Javascripts* -->
+    <!-- *End of Javascripts* -->
+
+    <!-- *Fonter* -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <meta charset="UTF-8">
-    <title></title>
-    <script src="funksjoner.js"></script>
-    <script src="smoothScroll.js"></script>
+    <!-- *End of Fonter* -->
+
 </head>
-<body id="body">
 
-<script>
-    window.onscroll = onScroll;
-
-</script>
-
-
+<body>
 
 
 <div class="container">
 
-    <div class="menu_block" id="menu_block_animation">
+    <nav class="top_block" id="js_top_block">
+
+    </nav>
 
 
-        <div class="sentrer_meny">
-            <a href="javascript:autoScrollTo()" class="menu_navigation">Hjem</a>
-            <a href="javascript:autoScrollTo('c_2')" class="menu_navigation">Om manuellterapi</a>
-            <a href="javascript:autoScrollTo('c_3')" class="menu_navigation">Ultralyd</a>
-            <a href="javascript:autoScrollTo()" class="menu_navigation">Infeksjonsbehandling</a>
-
-        </div>
-
-    </div>
-
-    <header class="top_block" id="top_block_animation">
-
-
-        <img src="images/logoLysakerMT.png" class="logo">
-
-        <div class="align">
-            <a href="javascript:autoScrollTo()" class="menu_navigation">Hjem</a>
-            <a href="javascript:autoScrollTo('c_2')" class="menu_navigation">Om manuellterapi</a>
-            <a href="javascript:autoScrollTo('c_3')" class="menu_navigation">Ultralyd</a>
-            <a href="javascript:autoScrollTo()" class="menu_navigation">Infeksjonsbehandling</a></div>
-
-
-    </header>
-
-    <article class="mid_block" >
-
-        <div class="content_block" id="c_1">
-
-            <h2 class="content_title"></h2>
-
-            <p>Om du har muskel- eller skjelettplager kan våre erfarne manellterapeuter tilby grundig undersøkelse og vurdering. Og deretter behandling etter kort ventetid, med mulighet for tett oppfølging.</p>
-            <p>Lysaker Manuellterapi ligger på "Lysakerlokket". Vi deler lokaler med Lysaker Fysioterapi og Akupunktur AS. Vi har godt samarbeid om våre pasienter og drar nytte av hverandres kunnskap, spesialfelt og ekspertise.
-                Se www.lysaker-fysioterapi.no. Lysaker Manuellterapi ligger kort vei fra bussholdeplass og togstasjon. Det er også parkeringsmuligheter i nærliggende parkeringshus.</p>
-
-            <img src="http://i.imgur.com/J6GBdEn.jpg" id="eksempelbilde">
-
-            <p>Du kan gå komme direkte til Lysaker Manuellterapi uten henvisning fra lege uten at det er noen forskjell i prisen</p>
-
-            <p>Har du behov for rask hjelp? Vi har avsatte timer for akutte tilstander.Ta kontakt direkte på telefonnummer 928 70 100</p>
-
-
-
-
-        </div>
-        <div class="content_block" id="c_2">
-
-            <p>Manuellterapeuter er  eksperter på muskel- og skjelettsystemet.</p>
-            <p>Alle manuellterapeuter har en toårig mastergrad utdanning i manuellterapi i tillegg til grunnutdanning  i fysioterapi.
-                Det tar minimum 7 år å bli manuellterapeut.  I Norge er det Universitetet i Bergens som utdanner manuellterapeuter.
-                Manuellterapeuter er primærkontakter. Det vil si du kan gå rett til manuellterapeut og få trygderefusjon.
-                Det er ikke nødvendig med henvisning.
-                Du kan oppsøke manuellterapeuter på lik linje som til fastlege dersom det er muskelskjelett plager du trenger å få vurdert.
-            <p>Manuellterapeuter undersøker, vurderer og behandler plager i muskel-/skjelettsystemet.
-                Gjennom grundig undersøkelse og kunnskap om andre sykdommer kan manuellterapeuter stille en diagnose.
-                De kan differensialdiagnostisere, det vil si skille mellom sykdommer i muskel- og skjelett
-                og andre sykdommer med samme symptomer (for eksempel brudd, skader, kreft eller inflammasjon).</p>
-            <p>I undersøkelsen kan manuellterapeuten rekvirere bildediagnostikk (røntgen/MR/CT) og henvise til spesialist.
-                Manuellterapeut kan også sykmelde.
-                Behandlingen er gjerne en kombinasjon av manuelle teknikker som bla. ledd-manipulasjon, mobilisering og bløtvevsbehandling.
-                Det er også viktig med aktivitet som øvelser, trening, råd og veiledning.
-                Målet er å dempe smerte, bedre funksjon og gi pasienten innsikt, kunnskap og hjelp til å behandle seg selv.</p>
-
-
-        </div>
-        <div class="content_block" id="c_3"></div>
-        <div class="content_block" id="c_4"></div>
+    <article class="mid_block" id="js_mid_block">
 
     </article>
 
-    <footer class="bottom_block">
 
-        <p class="footer_text">AS Mercor, avd. Lysaker Manuellterapi, Pb 24, 1324 Lysaker      org. nr   921628757</p>
+    <footer class="bottom_block" id="js_bottom_block">
 
     </footer>
 
-
 </div>
-
-
-
 
 
 
