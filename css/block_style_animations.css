@@ -2,11 +2,13 @@
 
 .top_block_js{
 
-    height: 95px;
+    height: 100px;
 
     width: 100%;
 
-    background-color: black;
+    background-color: #5197A8;
+    background-image: url(../images/faderimg1.png);
+
 
     position: fixed;
 
