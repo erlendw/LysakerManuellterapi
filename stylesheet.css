@@ -1,217 +1,59 @@
-html, body {
+html,body{
 
-    margin:0;
-    padding:0;
-    height:100%;
+    margin: 0;
+    height: 100%;
+    width: 100%;
 
 }
+
 .container {
 
     min-height:100%;
     position:relative;
 
 }
-.top_block {
 
-    background-image: url("images/bokeh.png");
 
-    background-color: #6798A7;
+.top_block{
+
+    /*bakgrunnsbilde*/
+    background-image: url(images/bokeh.png);
 
     width: 100%;
-    height: 400px;
+    height: 300px;
     opacity: 1;
 
+
 }
-.mid_block {
+
+.mid_block{
 
     position: relative;
     width: 750px;
-    height: auto;/*Skal være auto*/
-    background-color: whitesmoke;
-    margin-top: -100px;
-    margin-right: auto;
+    height: 1600px;/*fiktiv høyde skal endres til auto*/
+
     margin-left: auto;
-    padding-bottom: 80px;/*Må være lik height av bottom block*/
-    padding-top: 1px;
+    margin-right: auto;
+    margin-top: -100px;
+
+
+    background-color: whitesmoke;
+
+
     border-radius: 5px;
+
     border: 1px solid lightgray;
 }
-.bottom_block {
 
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:80px;   /* Height of the footer */
-    background-color: #6798A7;
+.bottom_block{
 
-
-}
-
-h1.site_title{
-
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    line-height: 2;
-    letter-spacing: 2px;
-    font-size: 50px;
-    color: black;
-    margin: 0;
-    opacity: 0.7;
-
-}
-
-div.align{
-
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    /*line-height: 6;*/
+    height: 200px;
+
+    /*bakgrunnsbilde*/
+    background-image: url(images/bokeh.png);
 
 
 }
-
-a:hover{
-
-    background-image: url("images/bokehtest_v2_1_nonoise.png");
-
-}
-
-.top_navigation{
-
-    font-family: 'Oswald', sans-serif;
-    font-size: 15px;
-    color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.content_block{
-
-    width: 750px;
-    height: 900px;
-    margin-top: 5px;
-    margin-bottom: 0;
-    border-radius: 5px;
-    margin-right: auto;
-    margin-left: auto;
-
-}
-
-.menu_block{
-
-    opacity: 0;
-    width: 100%;
-    height: 80px;
-    background-color: #6798A7;
-    position: fixed;
-    top:0;
-    z-index: 999;
-    /*background-image: url("images/bokehtest_v2_1_nonoise.png");//*/
-}
-
-.menu_navigation{
-
-    font-family: 'Oswald', sans-serif;
-    font-size: 15px;
-    color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-decoration: none;
-
-}
-
-.sentrer_meny{
-
-    width: 100%;
-    text-align: center;
-    line-height: 4;
-
-}
-
-/*===================================================================*/
-/* CSS for text*/
-
-
-.content_title{
-
-    font-family: 'Roboto Condensed', sans-serif;
-
-    text-align: center;
-
-    padding: 10px;
-
-    font-size: 20px;
-
-    color: #565D63;
-
-
-
-
-}
-
-p{
-
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    padding: 10px;
-    margin-top: 0;
-
-    font-size: 20px;
-
-    letter-spacing: 1px;
-
-    color: #565D63;
-
-}
-
-.footer_text{
-
-    text-align: center;
-
-    letter-spacing: 0;
-
-    color: floralwhite;
-
-    line-height: 3;
-
-
-}
-
-iframe{
-
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.center_gmap{
-
-    margin-left: auto;
-    margin-right: auto;
-}
-
-img{
-    width:600px;
-    display:block;
-    margin:0 auto;
-}
-
-.logo{
-
-    padding-top: 100px;
-
-    padding-bottom: 30px;
-    height: 50px;
-    width: auto;
-
-    margin-left:47.5%;
-
-
-
-    opacity: 0.7;
-}
-
-/**/
