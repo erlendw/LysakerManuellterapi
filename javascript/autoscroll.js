@@ -1,75 +1,84 @@
-/**
- * Created by Erlend on 17/10/14.
- *
- * Målet med denne filen er å bygge en autoscroller som navigerer til toppen av et element
- *
- */
-/**
- Smoothly scroll element to the given target (element.scrollTop)
- for the given duration
+window.smoothScroll = (function(){
+// We do not want this script to be applied in browsers that do not support those
+// That means no smoothscroll on IE9 and below.
+    if(document.querySelectorAll === void 0 || window.pageYOffset === void 0 || history.pushState === void 0) { return; }
 
- Returns a promise that's fulfilled when done, or rejected if
- interrupted
- */
-var smooth_scroll_to = function(element, target, duration) {
-    target = Math.round(target);
-    duration = Math.round(duration);
-    if (duration < 0) {
-        return Promise.reject("bad duration");
+// Get the top position of an element in the document
+    var getTop = function(element) {
+        // return value of html.getBoundingClientRect().top ... IE : 0, other browsers : -pageYOffset
+        if(element.nodeName === 'HTML') return -window.pageYOffset
+        return element.getBoundingClientRect().top + window.pageYOffset;
     }
-    if (duration === 0) {
-        element.scrollTop = target;
-        return Promise.resolve();
-    }
+// ease in out function thanks to:
+// http://blog.greweb.fr/2012/02/bezier-curve-based-easing-functions-from-concept-to-implementation/
+    var easeInOutCubic = function (t) { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1 }
 
-    var start_time = Date.now();
-    var end_time = start_time + duration;
-
-    var start_top = element.scrollTop;
-    var distance = target - start_top;
-
-    var smooth_step = function(start, end, point) {
-        if(point <= start) { return 0; }
-        if(point >= end) { return 1; }
-        var x = (point - start) / (end - start); // interpolation
-        return x*x*(3 - 2*x);
+// calculate the scroll position we should be in
+// given the start and end point of the scroll
+// the time elapsed from the beginning of the scroll
+// and the total duration of the scroll (default 500ms)
+    var position = function(start, end, elapsed, duration) {
+        if (elapsed > duration) return end;
+        return start + (end - start) * easeInOutCubic(elapsed / duration); // <-- you can change the easing funtion there
+        // return start + (end - start) * (elapsed / duration); // <-- this would give a linear scroll
     }
 
-    return new Promise(function(resolve, reject) {
+// we use requestAnimationFrame to be called by the browser before every repaint
+// if the first argument is an element then scroll to the top of this element
+// if the first argument is numeric then scroll to this location
+// if the callback exist, it is called when the scrolling is finished
+    var smoothScroll = function(el, duration, callback){
+        duration = duration || 500;
+        var start = window.pageYOffset;
 
-        var previous_top = element.scrollTop;
-
-
-        var scroll_frame = function() {
-            if(element.scrollTop != previous_top) {
-                reject("interrupted");
-                return;
-            }
-
-            // set the scrollTop for this frame
-            var now = Date.now();
-            var point = smooth_step(start_time, end_time, now);
-            var frameTop = Math.round(start_top + (distance * point));
-            element.scrollTop = frameTop;
-
-
-            if(now >= end_time) {
-                resolve();
-                return;
-            }
-
-
-            if(element.scrollTop === previous_top
-                && element.scrollTop !== frameTop) {
-                resolve();
-                return;
-            }
-            previous_top = element.scrollTop;
-
-            setTimeout(scroll_frame, 0);
+        if (typeof el === 'number') {
+            var end = parseInt(el);
+        } else {
+            var end = getTop(el);
         }
 
-        // boostrap the animation process
-        setTimeout(scroll_frame, 0);
+        var clock = Date.now();
+        var requestAnimationFrame = window.requestAnimationFrame ||
+            window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame ||
+            function(fn){window.setTimeout(fn, 15);};
+
+        var step = function(){
+            var elapsed = Date.now() - clock;
+            window.scroll(0, position(start, end, elapsed, duration));
+            if (elapsed > duration) {
+                if (typeof callback === 'function') {
+                    callback(el);
+                }
+            } else {
+                requestAnimationFrame(step);
+            }
+        }
+        step();
+    }
+
+    var linkHandler = function(ev) {
+        ev.preventDefault();
+
+        if (location.hash !== this.hash) window.history.pushState(null, null, this.hash)
+        // using the history api to solve issue #1 - back doesn't work
+        // most browser don't update :target when the history api is used:
+        // THIS IS A BUG FROM THE BROWSERS.
+        // change the scrolling duration in this call
+        smoothScroll(document.getElementById(this.hash.substring(1)), 500, function(el) {
+            location.replace('#' + el.id)
+            // this will cause the :target to be activated.
+        });
+    }
+
+// We look for all the internal links in the documents and attach the smoothscroll function
+    document.addEventListener("DOMContentLoaded", function () {
+        var internal = document.querySelectorAll('a[href^="#"]'), a;
+        for(var i=internal.length; a=internal[--i];){
+            a.addEventListener("click", linkHandler, false);
+        }
     });
-}
+
+// return smoothscroll API
+    return smoothScroll;
+
+})();
