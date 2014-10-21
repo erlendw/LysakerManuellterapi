@@ -3,3 +3,10 @@ p{
     font-size: 12pt;
     color: grey;
 }
+
+body{
+    width:90%;
+    height:100%;
+    /*padding-left:20px;
+    padding-right:20px; */
+}
