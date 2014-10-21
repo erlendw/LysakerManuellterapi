@@ -38,6 +38,7 @@ Copyright Mercor AS
     <script src="javascript/invoke_fader.js"></script>
     <script src="javascript/autoscroll.js"></script>
     <script src="javascript/invoke_autoscroll.js"></script>
+    <script src="javascript/invoke_dynamic_content.js"></script>
 
 
     <script>
@@ -64,9 +65,9 @@ Copyright Mercor AS
 
             <h1 class="site_title" id="js_site_title">Lysaker Manuellterapi</h1>
 
-            <a href="javascript:autoScrollTo('js_bottom_block')">Hjesm •</a>
-            <a href="javascript:autoScrollTo('js_bottom_block')">Om manuellterapi • </a>
-            <a href="javascript:autoScrollTo('js_bottom_block')">Bestill <time></time></a>
+            <a href="javascript:setNewContent(1)">Hjem •</a>
+            <a href="javascript:setNewContent(2)">Om manuellterapi • </a>
+            <a href="javascript:setNewContent(3)">Bestill <time></time></a>
 
 
         </nav>
@@ -76,7 +77,7 @@ Copyright Mercor AS
 
     <article class="mid_block" id="js_mid_block">
 
-        <object type="text/html" data="content/c_1.html" id="dynamic_content_1" class="dynamic_content"></object>
+        <object type="text/html" data="content/c_1.html" id="dynamic_content" class="dynamic_content"></object>
 
     </article>
 
