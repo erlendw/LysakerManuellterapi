@@ -28,6 +28,8 @@ Copyright Mercor AS
 
     <link  rel='stylesheet'	type='text/css'	href='css/text_styles.css'/>
     <link  rel='stylesheet'	type='text/css'	href='css/text_styles_animations.css'/>
+
+    <link  rel="stylesheet" type="text/css" href="css/image_styles.css"/>
     <!-- *End of Stylesheets* -->
 
 
@@ -39,11 +41,6 @@ Copyright Mercor AS
     <script src="javascript/autoscroll.js"></script>
     <script src="javascript/invoke_autoscroll.js"></script>
     <script src="javascript/invoke_dynamic_content.js"></script>
-
-
-    <script>
-        window.onscroll = sjekkOffset;
-    </script>
 
     <!-- *End of Javascripts* -->
 
@@ -61,13 +58,17 @@ Copyright Mercor AS
 
     <nav class="top_block" id="js_top_block">
 
+        <img src="images/logoLysakerMT.png" class="header_logo" id="header_logo">
+
         <nav class="top_block_text" id="js_top_block_text">
 
             <h1 class="site_title" id="js_site_title">Lysaker Manuellterapi</h1>
 
             <a href="javascript:setNewContent(1)">Hjem •</a>
             <a href="javascript:setNewContent(2)">Om manuellterapi • </a>
-            <a href="javascript:setNewContent(3)">Bestill <time></time></a>
+            <a href="javascript:setNewContent(3)">Tjenester •</a>
+            <a href="javascript:setNewContent(4)">Bestill time</a>
+
 
 
         </nav>
@@ -77,7 +78,10 @@ Copyright Mercor AS
 
     <article class="mid_block" id="js_mid_block">
 
-        <object type="text/html" data="content/c_1.html" id="dynamic_content" class="dynamic_content"></object>
+        <object type="text/html" data="content/c_1.html" id="dynamic_content_1" class="dynamic_content"></object>
+        <object type="text/html" data="content/c_2.html" id="dynamic_content_2" class="dynamic_content"></object>
+        <object type="text/html" data="content/c_3.html" id="dynamic_content_3" class="dynamic_content"></object>
+        <object type="text/html" data="content/c_4.html" id="dynamic_content_4" class="dynamic_content"></object>
 
     </article>
 
@@ -93,3 +97,8 @@ Copyright Mercor AS
 
 </body>
 </html>
+
+
+<script>
+    window.onscroll = sjekkOffset;
+</script>

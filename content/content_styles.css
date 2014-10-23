@@ -8,6 +8,38 @@ body{
     width:90%;
     height:100%;
     overflow:hidden;
-    /*padding-left:20px;
-    padding-right:20px; */
+
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 45px;
+
+    margin-bottom: 0;
+
+
+}
+
+.reserve_time_button{
+
+    text-align: center;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    background-color: cadetblue;
+    color: floralwhite;
+
+    border-radius: 5px;
+
+    padding: 5px;
+
+    font-size: 30px;
+
+    display: inline-block;
+
+
+
+
+
+
 }
