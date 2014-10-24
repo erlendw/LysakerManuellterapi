@@ -20,7 +20,7 @@ function endreID(el){
         document.getElementById('js_top_block_text').className = 'top_block_text_js';
         document.getElementById('js_site_title').className = 'site_title_js';
 
-        document.getElementById('header_logo').style.opacity = 0.6;
+        document.getElementById('header_logo').style.opacity = 0.9;
 
 
         fadein('js_top_block');

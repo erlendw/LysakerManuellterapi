@@ -26,13 +26,14 @@ function setNewContent(content){
         if(i == content) {
 
             element.style.visibility = 'visible';
+            element.style.position = 'relative';
 
         }
 
         else if(i != content){
 
             element.style.visibility = 'hidden';
-
+            element.style.position = 'absolute';
         }
 
 

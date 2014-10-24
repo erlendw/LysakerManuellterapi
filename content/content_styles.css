@@ -1,7 +1,10 @@
 p{
     font-family: Helvetica;
     font-size: 13pt;
-    color: darkgrey;
+    color: #2F3536;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 body{
@@ -20,37 +23,13 @@ body{
 
 }
 
-.reserve_time_button{
-
-    text-align: center;
-
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-    background-color: cadetblue;
-    color: floralwhite;
-
-    border-radius: 5px;
-
-    padding: 5px;
-
-    font-size: 30px;
-
-    display: inline-block;
-
-
-
-
-
-
-}
-
 .site_title{
 
     font-family: Helvetica;
 
     text-align: center;
 
-    color: darkgrey;
+    color: #2F3536;
 
     font-size: 20px;
 
@@ -70,6 +49,4 @@ body{
 .orderbutton {
     width:175px;
     height:auto;
-    margin-left:47.5%;
-    margin-right:auto;
 }
